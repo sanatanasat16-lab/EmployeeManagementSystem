@@ -1,10 +1,7 @@
 
-from Employee import Employee
+from Employee import Employee       # using Employee class from Employee.py file
 
-class ContractEmployee(Employee):
-
-    def __init__ (self,name,age, role,basic_salary):
-        super().__init__(name,age,role,basic_salary)
+class ContractEmployee(Employee):  # child class of Employee
          
-    def calculate_salary(self):
-        return  (self.basic_salary + (self.basic_salary * 0.05))
+    def calculate_salary(self):        # to calculate salary of contract employee
+        return  (self.basic_salary + (self.basic_salary * 0.05))     # 5% allowance for contract employee

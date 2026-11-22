@@ -11,10 +11,10 @@ class Employee(ABC):
         print(f'{self.name} {self.age} {self.role} {self.__basic_salary}')
         
     @property
-    def basic_salary(self):
+    def basic_salary(self):            # property decorator to access private variable __basic_salary
         return self.__basic_salary
     
-    @abstractmethod
+    @abstractmethod                  # abstract method to calculate salary of employee
     def calculate_salary(self):
         pass 
 

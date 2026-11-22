@@ -1,11 +1,8 @@
 from Employee import Employee
 
-class PermanentEmployee(Employee):
-
-    def __init__ (self,name,age, role,basic_salary):
-        super().__init__( name,age,role,basic_salary)
-    
-    def calculate_salary(self):
-         salary = (self.basic_salary + self.basic_salary *0.2)
+class PermanentEmployee(Employee):        # child class of Employee
+ 
+    def calculate_salary(self):            # to calculate salary of permanent employee
+         salary = (self.basic_salary + self.basic_salary *0.2)   # 20 % allowence for permanent employee
          return salary
     
